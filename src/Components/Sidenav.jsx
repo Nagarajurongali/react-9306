@@ -1,0 +1,19 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+function Sidenav() {
+  return (
+    <div className='sidenav bg-dark text-light'>
+        <ul>
+            <Link to='/dashboard'><li>Dashboard</li></Link> 
+            <Link to='/products'><li>Products</li></Link>
+            <Link to='/api'><li>DataFetching</li></Link>
+            <li>Store</li>
+            <li>Messages</li>
+        </ul>
+        <p>Logout</p>
+    </div>
+  )
+}
+
+export default Sidenav
