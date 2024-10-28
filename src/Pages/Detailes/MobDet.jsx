@@ -9,7 +9,7 @@ function MobDet() {
     
   return (
     <div>
-        <p>{mobData.Brand}</p>
+        <p>Mobile Product details</p>
     </div>
   )
 }
