@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Sidenav from '../Components/Sidenav'
 import Header from '../Components/Header'
+import Viewproducts from './Viewproducts'
+import MobileView from './ViewDashboard/MobileView'
 
 function Dashboard() {
   return (
@@ -13,7 +15,8 @@ function Dashboard() {
             </Col>
             <Col sm={10}>
                 <Header/>
-                <h1>Dashboard</h1>
+                
+                <MobileView />
             </Col>
         </Row>
 

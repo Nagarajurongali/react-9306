@@ -2,3 +2,36 @@
 .sidenav{
   height: 100vh;
 }
+.login img{
+  height: 300px;
+}
+.main{
+  background-color: antiquewhite;
+  padding: 5%;
+  display: flex;
+  
+
+}
+.products{
+  border: 2px solid ;
+
+}
+.products img{
+  height: 300px;
+}
+.maindata{
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content:space-around;
+}
+.dataproducts{
+  border: 2px solid ;
+  padding: 1%;
+
+}
+.dataproducts img{
+  height: 200px;
+
+}

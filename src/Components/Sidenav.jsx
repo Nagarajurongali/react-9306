@@ -7,7 +7,7 @@ function Sidenav() {
         <ul>
             <Link to='/dashboard'><li>Dashboard</li></Link> 
             <Link to='/products'><li>Products</li></Link>
-            <Link to='/api'><li>DataFetching</li></Link>
+            <Link to='/fetching'><li>DataFetching</li></Link>
             <li>Store</li>
             <li>Messages</li>
         </ul>

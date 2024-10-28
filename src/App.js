@@ -8,6 +8,10 @@ import  Dashboard  from './Pages/Dashboard';
 import Products from './Pages/Products';
 import Nodatafound from './Pages/Nodatafound';
 import APIdata from './Pages/APIdata';
+import Viewproducts from './Pages/Viewproducts';
+import MobileView from './Pages/ViewDashboard/MobileView';
+import ViewMob from './Pages/ViewAll/ViewMob';
+import MobDet from './Pages/Detailes/MobDet';
 function App() {
   return (
     <div>
@@ -18,7 +22,12 @@ function App() {
           <Route path='/signup' exact element={<Signup />} />
           <Route path='/dashboard' exact element={<Dashboard />} />
           <Route path='/products' exact element={<Products />} />
-          <Route path='/api' exact element={<APIdata />} />
+          <Route path='/fetching' exact element={<APIdata />} />
+          <Route path='/data' exact element={<Viewproducts />} />
+          <Route path='/viewall' exact element={<Viewproducts />} />
+          <Route path='/mobileview' exact element={<MobileView />} />
+          <Route path='/viewmob' exact element={<ViewMob />} />
+          <Route path='/viewmob/:id' exact element={<MobDet />} />
           <Route path='*' exact element={<Nodatafound />} />
         </Routes>
       </Router>
