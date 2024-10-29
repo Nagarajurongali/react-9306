@@ -1,9 +1,20 @@
 import React from 'react'
 import {MobileData} from '../../Data/MobilesData'
 import { Link } from 'react-router-dom'
+import { Col, Row } from 'react-bootstrap'
+import Sidenav from '../../Components/Sidenav'
+import Header from '../../Components/Header'
 function ViewMob() {
     
   return (
+    <Row>
+        <Col sm={2}>
+            <Sidenav />
+        </Col>
+        <Col sm={10}>
+        <Header/>
+        
+       
     <div className='container' style={{display:'flex',flexWrap:'wrap',gap:'2%'}}>
         {
             MobileData.map((e)=>{
@@ -21,6 +32,8 @@ function ViewMob() {
             })
         }
     </div>
+    </Col>
+    </Row>
   )
 }
 

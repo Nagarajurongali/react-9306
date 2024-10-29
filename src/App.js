@@ -12,6 +12,8 @@ import Viewproducts from './Pages/Viewproducts';
 import MobileView from './Pages/ViewDashboard/MobileView';
 import ViewMob from './Pages/ViewAll/ViewMob';
 import MobDet from './Pages/Detailes/MobDet';
+import Compone from './Datapassing/Compone';
+import CompA from './Datapassing/usecontaxt/CompA';
 function App() {
   return (
     <div>
@@ -28,6 +30,8 @@ function App() {
           <Route path='/mobileview' exact element={<MobileView />} />
           <Route path='/viewmob' exact element={<ViewMob />} />
           <Route path='/viewmob/:id' exact element={<MobDet />} />
+          <Route path='/dataone' exact element={<Compone />} />
+          <Route path='/usecontext' exact element={<CompA />} />
           <Route path='*' exact element={<Nodatafound />} />
         </Routes>
       </Router>
