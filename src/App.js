@@ -20,7 +20,7 @@ function App() {
 
       <Router>
         <Routes>
-          <Route path='/' exact element={<Login />} />
+          <Route path='/react-9306' exact element={<Login />} />
           <Route path='/signup' exact element={<Signup />} />
           <Route path='/dashboard' exact element={<Dashboard />} />
           <Route path='/products' exact element={<Products />} />
